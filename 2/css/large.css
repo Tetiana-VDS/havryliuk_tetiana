@@ -1,0 +1,151 @@
+  @media only screen and (min-width: 64rem) {
+  nav ul li a {
+      font-size: 1.4rem;
+  }
+   .missionCircles {
+     display: flex;
+     position: absolute;
+     bottom: -102px;
+     left: 20px;
+     width: 97%;
+     justify-content: space-around;
+
+   }
+
+   .mission {
+     font-family: var(--ff-headings);
+     color: white;
+     width: 200px;
+     background-color: var(--clr-news);
+     border-radius: 50%;
+     font-weight: 900;
+     font-size: 2.2rem;
+     text-decoration: underline;
+     text-align: center;
+     height: 190px;
+     line-height: 170px;
+     opacity: 0.9;
+   }
+
+   .organization {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       gap: 1rem;
+   }
+
+   .eachOrganization {
+     display: grid;
+     background-color: var(--clr-events);
+line-height: 2.5rem;
+text-align: left;
+   }
+
+   .eachOrganization img {
+     width: 100%;
+     text-align: center;
+     margin: 0 auto;
+   }
+   .left{
+     width: 100%;
+   }
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+    }
+
+    #galleryTitle {
+      grid-column: 1 / -1;
+    }
+
+    figure {
+      border: 1px solid #333;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+    
+    }
+
+    figure img:hover {
+      box-shadow: 0 0 20px #333;
+
+    }
+
+    form {
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    form label.sbs {
+      padding: .4rem 0;
+    }
+    .news1{
+      margin: 2rem;
+      text-indent: 2rem;
+    }
+    .news1 img{
+      float: right;
+      padding: 1rem;
+    }
+     .news2 {
+       margin: 2rem;
+       text-indent: 2rem;
+     }
+
+     .news2 img {
+       float: left;
+       padding: 1rem;
+     }
+     .eventtocome{
+       display: grid;
+       grid-template-columns: 6fr 1fr;
+      
+
+     }
+     .mainEvents{
+font-size: 1.5rem;
+     }
+     .weather{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+     }
+     .Wdays{
+       display: block;
+       margin: auto 0;
+       font-size: 1.5rem;
+     }
+      /* Business */
+      .business {
+        margin: 1rem;
+        text-align: justify;
+        text-justify: inter-word;
+
+      }
+
+      .bigbusinessBT {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-indent: 2rem;
+
+
+      }
+
+      .bigbusinessBT img {
+        width: 100%;
+
+      }
+
+      .smallbusinessBT {
+        border: 2px solid #333;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      }
+
+      .eachBusiness {
+        border: 2px solid #333;
+        padding: 1rem;
+      }
+}

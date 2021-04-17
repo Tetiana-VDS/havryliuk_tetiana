@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston</title>
+    <meta name="description" content="Hot&Cold Weather Center Site, Storm Center Page, WDD 230, by Tetiana Havryliuk">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+     <link rel="shortcut icon" href="img/favicon.ico">
+
+</head>
+
+<body>
+    <header><img id="logoimg" src="img/rainbow.png" alt="Rainbow Logo Image" />
+        <section class="heading">
+            <h1>Hot & Cold Local Weather Center</h1>
+            <h3>
+                WE CARE!!!
+            </h3>
+
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="https://tetiana-vds.github.io/lesson11/index.html">Home</a></li>
+            <li><a href="https://tetiana-vds.github.io/lesson11/preston.html"> Preston</a></li>
+            <li> <a href="https://tetiana-vds.github.io/lesson11/sodaSpring.html">Soda Spring</a></li>
+            <li><a href=" https://tetiana-vds.github.io/lesson11/fishHaven.html">Fish Haven</a> </li>
+            <li class="active"><a href="https://tetiana-vds.github.io/lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://tetiana-vds.github.io/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="">
+        <h2>Storm Center</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">Full Name*<input type="text" name="frame" required></label>
+                <label class="top"> Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top"> Phone*<input type="tel" name="phone" placeholder="71235551234" required></label>
+                <label class="top" for="zip">Zip Code:
+                    <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date<input type="date" name="stormDate"></label>
+                <label class="top">Storm Type
+                    <select name="subject">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="software">Blizzards</option>
+                        <option value="creative">Hail</option>
+                        <option value="info">Heavy rain</option>
+                        <option value="construction">Ice storms</option>
+                        <option value="business">Lightning</option>
+                        <option value="security">Thunderstorms</option>
+                        <option value="security">Wind</option>
+                        <option value="security">Other</option>
+                    </select>
+                </label>
+                <label class="top">Storm Severity</label>
+                <label class="flexly" for="rating">
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
+
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+                <label class="top">Storm Region
+                    <select name="subject">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="software">Preston</option>
+                        <option value="creative">Soda Springs</option>
+                        <option value="info">Fish Haven</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div>Are you in danger?</div>
+                <label class="sds"> <input type="radio" name="audience" value="yes"> Yes </label>
+                <label class="sds"> <input type="radio" name="audience" value="maybe"> Maybe</label>
+                <label class="sds"> <input type="radio" name="audience" value="no"> No</label>
+                <div>Additional Information or Comments</div>
+                <textarea name="message">
+</textarea>
+            </fieldset>
+            <input type="submit" value="Report Storm" class="submitBtn">
+        </form>
+        <div class="contacts">
+              <iframe class="map" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5736789.032235191!2d-118.64343276787848!3d45.405981566368176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358ffa885e499e9%3A0xd06b300515f78758!2sIdaho%2C%20USA!5e0!3m2!1sen!2sua!4v1616402169287!5m2!1sen!2sua"
+                  width="520" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <section>
+                <h3>The Weather Site</h3>
+                <p>30 N 1st E</p>
+                <p>Preston, ID 83263</p><br>
+                <p>&#x260E; 999.999.9999</p>
+                <p>&#x2709; hotcold.center</p>
+                <div class="social">
+                    <a href="https://www.facebook.com/">
+                        <img class="social-link" src="img/SocialMedia/facebook.png" alt="Facebook icon" />
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img class="social-link" src="img/SocialMedia/twitter.png" alt="Twitter icon" />
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img class="social-link" src="img/SocialMedia/instagram.png" alt="Instagram Icon" />
+                    </a>
+                    <a href="https://www.gmail.com/">
+                        <img class="social-link" src="img/SocialMedia/googleplus.png" alt="Gmail Icon" />
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="copyrightYear"></span> Hot & Cold Local Weather Center | <a
+            href="https://openweathermap.org/">Open
+            Weather Map</a>| Tetiana Havryliuk | <a href=" https://tetiana-vds.github.io/lesson11/wireframes.html">Wire
+            Frames</a> | <span id="now"></span>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    width: 100%;
+    font-family: Ubuntu,
+        sans-serif;
+      background-color: rgb(198, 198, 206);
+       text-align: center; 
+       justify-content: center;
+}
+.card {
+     
+    padding: 10px;
+ margin: auto; 
+     
+}
+footer{
+    border-top: 1px solid;
+    padding-top: 10px;
+
+}
+footer,header {
+    width: 100%;
+    border-top: 1px solid #555;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+ div {
+     justify-content: center;
+     margin: 0 auto;
+ }
+h1 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fdf9f9f6;
+     background: linear-gradient(white, rgba(95, 91, 91, 0.685));
+}
+h2,h1{
+    font-family: 'Vollkorn',
+    serif;
+     padding: 10px;
+ margin: 0 auto;
+ color:rgb(56, 56, 114);
+
+}
+section main{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+ grid-template-rows: auto;
+  grid-gap: 8px;
+  justify-content: center;
+}
+section img {
+    width: 250px;
+     box-shadow: 0 0 30px 0;
+    
+}
+section{
+    min-width: 240px;
+       border: 1px solid #333;
+       background-color: rgb(178, 178, 209);
+         padding: 1.25rem;
+          line-height: 2rem;
+}
+
+@media only screen and (min-width: 32.5rem) {
+
+    .cards{
+    
+         max-width: 80%;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: auto ;
+       grid-gap: 8px;
+       
+    }
+     img {
+         box-shadow: 0 0 30px 0;
+         min-width: 200px;
+         height: 320px;
+     }
+section {
+    min-width: 330px;
+    border: 1px solid #333;
+    background-color: rgb(178, 178, 209);
+    
+    line-height: 2rem;
+    
+}
+ div {
+     justify-content: center;
+     margin: 0 auto;
+ }
+}
+
+
+@media only screen and (min-width: 74rem) {
+
+    body {
+        width: 90%;
+        font-size: 18px;
+        line-height: 2rem;
+    }
+
+    header,
+    footer {
+        margin: 0 auto;
+          width: 100%;
+          justify-content: center;
+          margin-bottom:10px;
+    }
+    img {
+        box-shadow: 0 0 30px 0;
+        width: 200px;
+        height: 320px;
+    }
+    .cards {
+      
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: auto;
+      margin: 1.25rem auto;
+        justify-content: center;
+        margin: auto;
+    }
+    section {
+        min-width: 330px;
+        border: 1px solid #333;
+        background-color: rgb(178, 178, 209);
+        padding: 1.25rem;
+        line-height: 2rem;
+    }
+    div{
+ justify-content: center;
+ margin: 1.25rem auto;
+    }
+    
+}

@@ -1,0 +1,242 @@
+@media only screen and (min-width: 32.5rem) {
+/* Navigation  */
+    nav ul {
+    display: flex;
+   
+}
+nav a {
+    font-size: 4rem;
+}
+nav button {
+    display: none;
+}
+nav ul.hide {
+    display: flex;
+}
+nav ul li {
+    float: left;
+flex: 1 1 auto;
+
+}
+
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: .6rem 1rem;
+
+}
+/* Banner */
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+   width: 100%;;
+    height: auto;
+}
+.herodiv img {
+    
+    width: 100%;
+    height: auto;
+
+} 
+/* Five Days Forecast */
+
+body {
+    font-size: 17px;
+    padding: 10px;
+}
+  
+header,
+nav,
+main,
+footer {
+    margin: 1.25rem auto;
+    width: 100%;
+}
+footer {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+}
+#logoimg {
+    width: 128px;
+    height: 128px;
+}
+
+.measures {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    
+}
+.contacts{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.social {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+.map {
+    display: block;
+    max-width: 520px;
+    width: 100%;
+    max-height: 350px;
+    margin: auto;
+     box-shadow: 0 0 20px black;
+}
+
+/* Preston News */
+.prestonNews {
+    display: block;
+    padding: 5px;
+    background-color: #b1bab6;
+    box-shadow: 0 0 30px grey;
+    padding: 3px;
+
+}
+
+.prestonNews img {
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    float: right;
+    margin-top: 10px;
+}
+
+.prestonNews p {
+    text-align: justify;
+    line-height: 2rem;
+    text-indent: 30px;
+    padding: 20px;
+}
+
+#Saturday {
+    width: 100%;
+    font-size: 1.3rem;
+}
+table{
+    position: relative;
+   margin: auto;
+}
+ .gallery {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto;
+ }
+
+ #galleryTitle {
+     grid-column: 1 / -1;
+ }
+
+ .gallery figure {
+     border: 1px solid #333;
+ }
+
+ figure img {
+     max-width: 520px;
+     height: auto;
+     padding: 3px;
+     margin: 0 auto;
+ }
+ figcaption{
+     padding: 5px;
+ }
+ form {
+     width: 600px;
+     margin: 0 auto;
+ }
+/* .hometowns{
+    display: grid;
+    grid-template-columns: 1fr;
+     margin: .5rem auto;
+     
+} */
+.hometowns img {
+    max-width: 390px;
+    width: 100%;
+    box-shadow: 0 0 30px 0;
+    margin: 10px;
+}
+.prestons {
+    font-size: larger;
+    display: flex;
+    flex-direction: row-reverse;
+     width: 100%;
+    text-align: center;
+justify-content: space-between;
+}
+
+.sodas {
+      font-size: larger;
+    display: flex;
+    flex-direction: row;
+     width: 100%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.fishHs {
+     display: flex;
+    font-size: larger;
+      width: 100%;
+      justify-content: space-between;
+      padding: 20px;
+    text-align: center;
+}
+
+.homeTownNews{
+ margin-top: 1.25rem;
+ padding: 5px;
+ background-color: #b1bab6;
+ box-shadow: 0 0 30px grey;
+}
+.homeNewsText {
+  
+    padding: 5px;
+    text-align: justify;
+    
+}
+.homeTnews{
+      display: block;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.homeTnews img{
+    float: right;
+    max-width: 360px;
+    width: 100%;
+    padding-left: 20px ;
+    margin: 10px;
+    
+}
+    /* 5 day forecast */
+    .five {
+display: flex;
+justify-content: center;
+        margin: 5px;
+        padding: 0.3rem;
+    }
+
+    .fivebox {
+        border: 1px solid #333;
+        background-color: rgb(160, 175, 160);
+        padding-bottom: 30px;
+    }
+
+    .Wdays {
+        border: 1px solid #333;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 10%;
+        text-align: center;
+        background-color: rgb(113, 116, 113);
+        color: white;
+        box-shadow: 0 0 6px black;
+        box-sizing: content-box;
+    }
+}

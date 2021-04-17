@@ -1,0 +1,203 @@
+@media only screen and (min-width: 43.5rem) {
+
+    /* Navigation  */
+    nav ul {
+        display: flex;
+        box-shadow: 0 0 0 3px;
+
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul li {
+        float: left;
+        flex: 1 1 auto;
+
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 1rem;
+font-size: 1.1rem;
+    }
+    .contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+    }
+    .missionCircles {
+        display: flex;
+        position: absolute;
+        bottom: -92px;
+        left: 10px;
+        width: 97%;
+        justify-content: space-around;
+
+    }
+
+    .mission {
+        font-family: var(--ff-headings);
+        color: white;
+        width: 150px;
+        height: 150px;
+        background-color: var(--clr-news);
+        border-radius: 50%;
+        font-weight: 900;
+        font-size: 1.9rem;
+        text-decoration: underline;
+        text-align: center;
+        height: 150px;
+        line-height: 130px;
+        opacity: 0.9;
+    }
+
+    .organization {
+      display: grid;
+      grid-template-columns: 1fr;
+       
+    }
+
+    .eachOrganization {
+
+        background-color: var(--clr-events);
+
+    }
+
+    .eachOrganization img {
+        float: right;
+        width: 45%;
+        float:right;
+
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        
+    }
+
+    #galleryTitle {
+        grid-column: 1 / -1;
+    }
+
+    .gallery figure {
+        border: 1px solid #333;
+        margin: 0.5rem;
+    }
+
+    figure img {
+        max-width: 520px;
+        height: auto;
+        padding: 3px;
+        margin: 0 auto;
+      
+    }
+
+    figcaption {
+        padding: 5px;
+        font-weight: 900;
+    }
+
+    form {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .left{
+       float: left;
+       width: 50%;
+    }
+    .eventtocome {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+    }
+
+    .mainEvents {
+        font-size: smaller;
+        font-weight: 900;
+    }
+
+    .weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .Wdays {
+        display: block;
+    }
+    /* Business */
+    .business {
+        margin: 1rem;
+        text-align: justify;
+        text-justify: inter-word;
+
+    }
+
+    .bigbusinessBT {
+        display: block;
+        text-indent: 2rem;
+
+
+    }
+
+    .bigbusinessBT img {
+        width: 100%;
+
+    }
+
+    .smallbusinessBT {
+        border: 2px solid #333;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .eachBusiness {
+        border: 2px solid #333;
+        padding: 2rem;
+        text-overflow: clip;
+    }
+.news1 {
+    display: block;
+    padding: 1rem;
+    border: 1px solid #333;
+    box-shadow: 0 0 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2rem;
+}
+
+.news1 img {
+    float: right;
+    padding: 1rem;
+    width: 70%;
+}
+
+.news2 {
+    display: block;
+    padding: 1rem;
+    border: 1px solid #333;
+    box-shadow: 0 0 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 2rem;
+}
+
+.news2 img {
+    float: left;
+   width: 70%;
+   padding: 1rem;
+}
+}
