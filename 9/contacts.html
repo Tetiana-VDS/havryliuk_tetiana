@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diva Salon</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div class="logo-box">
+                <img src="https://cdn.glitch.com/fff0db1f-457e-4400-a9c7-8d0ad8e2bdb6%2FScreenshot%202020-11-02%20at%2016.55.30.png?v=1604328997336"
+                    alt="LOGO" />
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="index.html">Home</a>
+                    </li>
+                    <li>&nbsp; &nbsp; &nbsp;<a href="price.html">Service Menu</a></li>
+                    <li>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="banner-box">
+                <img src="https://cdn.glitch.com/fff0db1f-457e-4400-a9c7-8d0ad8e2bdb6%2FIMAGE%202020-11-30%2021%3A08%3A42.jpg?v=1606763345782"
+                    alt="My Banner" id="image" />
+            </div>
+            <div class="contact-grid">
+                <h2 class="title">
+                    VISIT US
+                </h2>
+
+                <p>
+                    Our Salon locates at 116 Alexadriskyi Bulvar Bila Tserkva City, Kyiv
+                    Region 09117
+                </p>
+                <h3 class="hours">
+                    Hours we work
+                </h3>
+
+                <table>
+                    <tr>
+                        <th>Monday</th>
+                        <th class="time">9:00 – 8:00</th>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <th class="time">9:00 – 8:00</th>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <th class="time">9:00 – 8:00</th>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <th class="time">9:00 – 8:00</th>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <th class="time">9:00 – 8:00</th>
+                    </tr>
+                    <tr>
+                        <th>Saturday</th>
+                        <th class="time">8:00 – 7:00</th>
+                    </tr>
+                    <tr>
+                        <th>Sunday</th>
+                        <th class="time">Closed</th>
+                    </tr>
+                </table>
+
+                <h4 class="invitation">
+                    We are always happy and ready to anticipate any desire you have!
+                    Life is so beautiful, and it is in our power to make its colors and
+                    emotions even brighter!
+                </h4>
+
+                <p>
+                    If you would like to book an appointment, please give us a call
+                    (+38) 067 275 95 49 or leave a message filling the form. We will
+                    contact you as fast as possible!
+                </p>
+
+                <div class="contacts-img-1">
+                    <img src="https://cdn.glitch.com/fff0db1f-457e-4400-a9c7-8d0ad8e2bdb6%2Fbeauty-salon-interior-concept-5.jpg?v=1607285202827"
+                        alt="image for page3" />
+                </div>
+
+                <div class="contacts-img-2">
+                    <img src="https://cdn.glitch.com/fff0db1f-457e-4400-a9c7-8d0ad8e2bdb6%2Fbeauty-salon-interior-concept-6.jpg?v=1607285203666"
+                        alt="image for page3" />
+                </div>
+                <div class="form">
+                    <form action="/my-handling-form-page" method="post">
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name" />
+                            </li>
+                            <li>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" id="mail" name="user_email" />
+                            </li>
+                            <li>
+                                <label for="msg">Message:</label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li class="button">
+                                <button type="submit">Send your message</button>
+                            </li>
+                        </ul>
+                    </form>
+                    <script>
+                        // get the feedback div element so we can do something with it.
+                        const feedbackElement = document.getElementById("feedback");
+                        // get the form so we can read what was entered in it.
+                        const formElement = document.forms[0];
+                        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                        formElement.addEventListener("submit", function (e) {
+                            // stop the form from doing the default action
+                            e.preventDefault();
+                            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                            feedbackElement.innerHTML =
+                                "Hello " +
+                                formElement.user_name.value +
+                                "! Thank you for your message. We will get back with you as soon as possible!";
+                            // make the feedback element visible.
+                            feedbackElement.style.display = "block";
+                            // add a class to move everything down so our message doesn't cover it.
+                            document.body.classList.toggle("moveDown");
+                        });
+                    </script>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social">
+                <a href="https://www.facebook.com/">
+                    <img class="social-link"
+                        src="https://cdn.glitch.com/fff0db1f-457e-4400-a9c7-8d0ad8e2bdb6%2Ffacebook.png?v=1606067705910     "
+                        alt="Facebook icon" />
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img class="social-link"
+                        src="https://cdn.glitch.com/fff0db1f-457e-4400-a9c7-8d0ad8e2bdb6%2Ftwitter.png?v=1606067705727"
+                        alt="Twitter icon" />
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img class="social-link"
+                        src="https://cdn.glitch.com/fff0db1f-457e-4400-a9c7-8d0ad8e2bdb6%2Finstagram.png?v=1606067705559"
+                        alt="Instagram Icon" />
+                </a>
+                <a href="https://www.gmail.com/">
+                    <img class="social-link"
+                        src="https://cdn.glitch.com/fff0db1f-457e-4400-a9c7-8d0ad8e2bdb6%2Fgoogleplus.png?v=1606067705559"
+                        alt="Instagram Icon" />
+                </a>
+            </div>
+            <h3>&copy; LET'S STAY CONNECTED</h3>
+            <p>
+                <em><a href="site-plan.html">Visit my Site Plan </a></em>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
